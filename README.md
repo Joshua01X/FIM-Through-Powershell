@@ -1,6 +1,6 @@
 # FIM-Through-Powershell
 
-> still under construction... please wait...
+![FIM](https://github.com/user-attachments/assets/a56087cc-a55f-462b-a340-1b5ae92175be)
 
 ## Objective
 This PowerShell script is designed to facilitate file integrity monitoring (FIM). It achieves this by allowing users to create a baseline of file hashes and monitor files for any changes against this baseline. 
