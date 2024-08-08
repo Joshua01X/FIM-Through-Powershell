@@ -124,14 +124,14 @@ if ($response -eq "A".ToUpper()) { <br>
 - Purpose: Monitors the specified path for changes by comparing current file hashes against the stored baseline. It notifies if files have been created, changed, or deleted.
 
 ## Documentation
-### Initiating Scanning With No Recorded Baseline Yet
+### Initiating Scan With No Recorded Baseline Yet
 The prompt will ask if the user wants to create a new baseline
 ![image](https://github.com/user-attachments/assets/a0e67ec3-229d-4aaa-8b8f-dc0ec4fbd099)
 
 The prompt will initiate the scanning afterwards
 ![image](https://github.com/user-attachments/assets/9cd9e41f-33b2-4857-af24-ec67d35f4319)
 
-### Initiating Scanning With A New Baseline
+### Initiating Scan With A New Baseline
 The prompt will also ask the following query before scanning
 ![image](https://github.com/user-attachments/assets/efc296ab-edb8-4681-b2c8-0a893f0ff0bf)
 
