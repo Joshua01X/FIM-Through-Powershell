@@ -141,6 +141,15 @@ The prompt will soon start the scanning afterwards
 ### Proof Of Newly Created Baseline's Reliability
 ![image](https://github.com/user-attachments/assets/3d2d0e85-bc84-41b6-8a29-4163284bea30)
 
+### Content Alteration Test
+![image](https://github.com/user-attachments/assets/2a293724-d10f-4e2e-b2ed-208dd2da9fe5)
+
+### File Removal Test
+![image](https://github.com/user-attachments/assets/5c059b5f-29c0-4914-9cd4-cc24feb71574)
+
+### File Creation Test
+![image](https://github.com/user-attachments/assets/7490c83e-f02e-4c70-afaf-8334c686468a)
+
 ## Discussion
 This script simplifies the process of file integrity monitoring by allowing users to:
 
