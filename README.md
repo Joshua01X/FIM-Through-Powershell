@@ -4,8 +4,7 @@
 
 ## Objective
 This PowerShell script is designed to facilitate file integrity monitoring (FIM). It achieves this by allowing users to create a baseline of file hashes and monitor files for any changes against this baseline. 
-The script supports two primary operations:
-
+### The script supports two primary operations:
 <b>Creating a new baseline</b>: Calculates and stores file hashes from a specified source path.<br>
 <b>Monitoring files</b>: Compares current file hashes against a stored baseline to detect any changes, deletions, or new files.
 
@@ -56,7 +55,6 @@ Write-Host "    B) Begin monitoring files with saved Baseline?" <br>
 Write-Host "" <br>
 $response = Read-Host -Prompt "Please enter 'A' or 'B'" <br>
 Write-Host "" <br>
-
 if ($response -eq "A".ToUpper()) { <br>
     $sourcePath = Read-Host -Prompt "Enter the source path to collect file data from" <br>
     $baselinePath = Read-Host -Prompt "Enter the destination path to save the baseline" <br>
@@ -124,6 +122,24 @@ if ($response -eq "A".ToUpper()) { <br>
 }
 
 - Purpose: Monitors the specified path for changes by comparing current file hashes against the stored baseline. It notifies if files have been created, changed, or deleted.
+
+## Documentation
+### Initiating Scanning With No Recorded Baseline Yet
+The prompt will ask if the user wants to create a new baseline
+![image](https://github.com/user-attachments/assets/a0e67ec3-229d-4aaa-8b8f-dc0ec4fbd099)
+
+The prompt will initiate the scanning afterwards
+![image](https://github.com/user-attachments/assets/9cd9e41f-33b2-4857-af24-ec67d35f4319)
+
+### Initiating Scanning With A New Baseline
+The prompt will also ask the following query before scanning
+![image](https://github.com/user-attachments/assets/efc296ab-edb8-4681-b2c8-0a893f0ff0bf)
+
+The prompt will soon start the scanning afterwards
+![image](https://github.com/user-attachments/assets/731526a0-995b-460c-a4ee-43cf7c636ed1)
+
+### Proof Of Newly Created Baseline's Reliability
+![image](https://github.com/user-attachments/assets/3d2d0e85-bc84-41b6-8a29-4163284bea30)
 
 ## Discussion
 This script simplifies the process of file integrity monitoring by allowing users to:
