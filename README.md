@@ -144,7 +144,7 @@ The prompt will soon start the scanning afterwards
 ## Discussion
 This script simplifies the process of file integrity monitoring by allowing users to:
 
-<b>Create a Baseline</b>: Captures the state of files by hashing them and storing their hashes. This baseline can be used for future comparisons.
+<b>Create a Baseline</b>: Captures the state of files by hashing them and storing their hashes. This baseline can be used for future comparisons.<br>
 <b>Monitor Files</b>: Compares the current state of files against the baseline to detect any changes, deletions, or new files.
 The use of SHA-512 hashing ensures a high level of data integrity and security. The script is user-friendly, guiding users through the process with clear prompts and decisions.
 
