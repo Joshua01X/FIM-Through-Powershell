@@ -6,7 +6,7 @@
 This PowerShell script is designed to facilitate file integrity monitoring (FIM). It achieves this by allowing users to create a baseline of file hashes and monitor files for any changes against this baseline. 
 The script supports two primary operations:
 
-<b>Creating a new baseline</b>: Calculates and stores file hashes from a specified source path.
+<b>Creating a new baseline</b>: Calculates and stores file hashes from a specified source path.<br>
 <b>Monitoring files</b>: Compares current file hashes against a stored baseline to detect any changes, deletions, or new files.
 
 ## Technologies Employed
