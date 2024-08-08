@@ -10,8 +10,8 @@ This PowerShell script is designed to facilitate file integrity monitoring (FIM)
 
 ## Technologies Employed
 
-- PowerShell: A scripting language and shell used for automating administrative tasks and configuration management.
-- SHA-512: A cryptographic hash function used to generate file hashes for integrity checking.
+- <b>PowerShell</b>: A scripting language and shell used for automating administrative tasks and configuration management.
+- <b>SHA-512</b>: A cryptographic hash function used to generate file hashes for integrity checking.
 
 ## Script Breakdown
 ### Hash Calculation Function
@@ -21,7 +21,7 @@ This PowerShell script is designed to facilitate file integrity monitoring (FIM)
     return $filehash
 }
 
-- <b>Purpose</b>: Computes the SHA-512 hash of a file, which serves as a unique fingerprint for file integrity verification.
+<b>Purpose</b>: Computes the SHA-512 hash of a file, which serves as a unique fingerprint for file integrity verification.
 
 ### Baseline Management Functions
 
@@ -42,8 +42,8 @@ Function Create-New-Baseline($sourcePath, $baselinePath) { <br>
     Write-Host "Baseline created at: $baselinePath" <br>
 }
 
-- <b>Erase-Baseline-If-Already-Exists</b>: Deletes an existing baseline file to avoid conflicts.<br>
-- <b>Create-New-Baseline</b>: Calculates hashes for all files in the specified source directory and writes them to a baseline file.
+<b>Erase-Baseline-If-Already-Exists</b>: Deletes an existing baseline file to avoid conflicts.<br>
+<b>Create-New-Baseline</b>: Calculates hashes for all files in the specified source directory and writes them to a baseline file.
 
 ### User Interaction
 
@@ -85,7 +85,7 @@ if ($response -eq "A".ToUpper()) { <br>
     Write-Host "Invalid selection. Please restart the script and choose 'A' or 'B'." <br>
 }
 
-- <b>Purpose</b>: Provides the user with options to create a baseline or start monitoring. Based on user input, it invokes the appropriate functions and handles the process accordingly.
+<b>Purpose</b>: Provides the user with options to create a baseline or start monitoring. Based on user input, it invokes the appropriate functions and handles the process accordingly.
 
 ### File Scanning Function
 
@@ -121,7 +121,7 @@ if ($response -eq "A".ToUpper()) { <br>
     }<br>
 }
 
-- <b>Purpose</b>: Monitors the specified path for changes by comparing current file hashes against the stored baseline. It notifies if files have been created, changed, or deleted.
+<b>Purpose</b>: Monitors the specified path for changes by comparing current file hashes against the stored baseline. It notifies if files have been created, changed, or deleted.
 
 ## Documentation
 ### Initiating Scan With No Recorded Baseline Yet
